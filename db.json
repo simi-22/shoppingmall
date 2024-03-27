@@ -2,7 +2,7 @@
     "products":[
         {
             "id":0,
-            "img":"https://image.yes24.com/goods/125000311/XL",
+            
             "title":"기억을 먹는 아이",
             "price":17000,
             "author":"도대체",
@@ -15,7 +15,7 @@
         },
         {
             "id":1,
-            "img":"https://image.yes24.com/goods/125117201/XL",
+            
             "title":"사랑하는 일이 인간의 일이라면",
             "price":13000,
             "author":"설하한",
@@ -28,7 +28,7 @@
         },
         {
             "id":2,
-            "img":"https://image.yes24.com/goods/57799398/XL",
+            
             "title":"회색인간",
             "price":13000,
             "author":"김동식",
@@ -41,7 +41,7 @@
         },
         {
             "id":3,
-            "img":"https://image.yes24.com/goods/123400303/XL",
+            
             "title":"이처럼 사소한 것들",
             "price":13800,
             "author":"클레어키건",
@@ -55,7 +55,7 @@
         },
         {
             "id":4,
-            "img":"https://image.yes24.com/goods/103495056/XL",
+            
             "title":"작별하지 않는다",
             "price":14000,
             "author":"한강",
@@ -68,7 +68,7 @@
         },
         {
             "id":5,
-            "img":"https://image.yes24.com/goods/125593530/XL",
+            
             "title":"수레바퀴 아래서",
             "price":16000,
             "author":"헤르만 헤세",
@@ -82,7 +82,7 @@
         },
         {
             "id":6,
-            "img":"https://image.yes24.com/goods/125480747/XL",
+           
             "title":"탱고",
             "price":17000,
             "author":"호르헤 루이스 보르헤스",
@@ -96,7 +96,7 @@
         },
         {
             "id":7,
-            "img":"https://image.yes24.com/goods/125294968/XL",
+            
             "title":"나쁜 감정의 법칙",
             "price":19000,
             "author":"쉬셴장",
@@ -110,7 +110,7 @@
         },
         {
             "id":8,
-            "img":"https://image.yes24.com/goods/124808556/XL",
+            
             "title":"매일, 더, 많은 숫자의 지배 ",
             "price":15800,
             "author":"미카엘 달렌, 헬게 토르비에른센",
@@ -124,7 +124,7 @@
         },
         {
             "id":9,
-            "img":"https://image.yes24.com/goods/125190189/XL",
+            
             "title":"니체처럼 사랑하고 세네카처럼 현명하게",
             "price":17500,
             "author":"윤지원",
@@ -137,7 +137,7 @@
         },
         {
             "id":10,
-            "img":"https://image.yes24.com/goods/122428190/XL",
+            
             "title":"생각이 너무 많은 어른들을 위한 심리학",
             "price":14000,
             "author":"김혜남",
@@ -150,7 +150,7 @@
         },
         {
             "id":11,
-            "img":"https://image.yes24.com/goods/124184309/XL",
+            
             "title":"한국 현대사를 뒤흔든 40가지 사건",
             "price":20000,
             "author":"강부원",
@@ -163,7 +163,7 @@
         },
         {
             "id":12,
-            "img":"https://image.yes24.com/goods/124187468/XL",
+            
             "title":"근대 용어의 탄생",
             "price":21000,
             "author":"윤혜준",
@@ -176,7 +176,7 @@
         },
         {
             "id":13,
-            "img":"https://image.yes24.com/goods/119148882/XL",
+            
             "title":"에드워드 호퍼의 시선",
             "price":22000,
             "author":"이연식",
@@ -189,7 +189,7 @@
         },
         {
             "id":14,
-            "img":"https://image.yes24.com/goods/91298514/XL",
+           
             "title":"호아킨 소로야 - 바다, 바닷가에서",
             "price":24000,
             "author":"호아킨 소로야",
@@ -202,7 +202,7 @@
         },
         {
             "id":15,
-            "img":"https://image.yes24.com/goods/125190189/XL",
+            
             "title":"뱅크시",
             "price":17500,
             "author":"윌 엘즈워스-존스",
