@@ -9,7 +9,7 @@ const NavBar = () => {
     <div id='Navbar'>
       <ul className='n-first-l'>
         <li><button>장바구니</button></li>
-        <li><button>로그인</button></li>
+        <li><button>login</button></li>
       </ul>
       <div className='n-second-l'>
         <h1><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></h1>
