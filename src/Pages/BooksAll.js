@@ -6,7 +6,7 @@ const BooksAll = () => {
     const [booksList, setBooksList] = useState([]);
     const getBooks = async() => {
         // let url = `http://localhost:4000/products`
-        let url = ` https://my-json-server.typicode.com/simi-22/https://github.com/simi-22/booksMall.git/products`
+        let url = `https://my-json-server.typicode.com/simi-22/booksMall/products`
         let response = await fetch(url);
         let data = await response.json();
         setBooksList(data);
