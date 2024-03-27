@@ -1,0 +1,73 @@
+#Navbar {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 130px;
+    padding-top: 10px;
+}
+#Navbar .n-first-l {
+    display: flex;
+    justify-content: end;
+    height: 15%;
+    max-width: 1680px;
+    /* background-color: tomato; */
+}
+#Navbar .n-first-l li {
+    margin-right: 20px;
+}
+#Navbar .n-second-l {
+    position: relative;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    margin: 0 auto;
+    /* background-color: violet; */
+}
+
+#Navbar .n-second-l input {
+    width: 500px;
+    font-size: 16px;
+    padding: 10px 50px 10px 15px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#Navbar .n-second-l button {
+    position: absolute;
+    right: 15px;
+    top: calc(50%-8px);
+    color: #555555;
+    font-size: 16px;
+}
+#Navbar .n-second-l button:hover {
+    color: #0080ff;
+}
+#Navbar .n-third-l {
+    /* border: 1px solid #414141; */
+    background-color: #0080ff;
+    color: #fff;
+    height: 30%;
+}
+#Navbar .n-third-l ul{
+    display: flex;
+    justify-content: center;
+    line-height: 36px;
+    margin: 0;
+    /* background-color: thistle; */
+}
+#Navbar .n-third-l li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#Navbar .n-third-l li button{
+    margin-right: 10px;
+    font-size: 18px;
+}
+#Navbar .n-third-l li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+#books-all-container>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#books-card-container img{
+   width: 100%;
+}
