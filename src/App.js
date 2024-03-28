@@ -1,14 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './Component/NavBar.css'
 // import Home from './Pages/Home';
 import Cart from './Pages/Cart';
 import './Component/BooksCard.css'
+import './Pages/Login.css'
+
 import BooksDetail from './Pages/BooksDetail';
 import Login from './Pages/Login';
 import BooksAll from './Pages/BooksAll';
 import NavBar from './Component/NavBar';
+import { useEffect, useState } from 'react';
 // import BooksCard from './Component/BooksCard';
 
 
@@ -31,13 +34,18 @@ import NavBar from './Component/NavBar';
 
 
 function App() {
+  //로그인 여부
+  const[authenticate, setAuthenticate] = useState(false); //로그인 여부
+  useEffect(()=>{
+    console.log(authenticate);
+  })
   return (
     <div className="App">
        <NavBar />
        <Routes>
         <Route path='/' element={<BooksAll />} />
         <Route path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<Login setAuthenticate={setAuthenticate}/>} />
         <Route path='/Books/:id' element={<BooksDetail />} />
        </Routes>
     </div>

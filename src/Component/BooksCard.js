@@ -7,8 +7,9 @@ const BooksCard = ({item}) => {
             <li>
                 <img src={item?.img} alt=''/>
                 <h6>{item?.title}</h6>
-                <p>{item?.author} 저</p>
-                <p>{item?.price}원</p>
+                <p>{item?.author} <span>저</span></p>
+                <p>{item?. company}</p>
+                <p>{item?.price} <span>원</span></p>
             </li>
         </ul>
     </div>
