@@ -1,34 +1,8 @@
 {
     "products":[
         {
-            "id":0,
-            
-            "title":"기억을 먹는 아이",
-            "price":17000,
-            "author":"도대체",
-            "company":"유유히",
-            "genre":"소설/시",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2024년 02월 15일"
-        },
-        {
-            "id":1,
-            
-            "title":"사랑하는 일이 인간의 일이라면",
-            "price":13000,
-            "author":"설하한",
-            "company":"봄날의책",
-            "genre":"소설/시",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2024년 02월 05일"
-        },
-        {
             "id":2,
-            
+            "img":"https://image.yes24.com/goods/57799398/XL",
             "title":"회색인간",
             "price":13000,
             "author":"김동식",
@@ -41,7 +15,7 @@
         },
         {
             "id":3,
-            
+            "img":"https://image.yes24.com/goods/123400303/XL",
             "title":"이처럼 사소한 것들",
             "price":13800,
             "author":"클레어키건",
@@ -55,7 +29,7 @@
         },
         {
             "id":4,
-            
+            "img":"https://image.yes24.com/goods/103495056/XL",
             "title":"작별하지 않는다",
             "price":14000,
             "author":"한강",
@@ -68,7 +42,7 @@
         },
         {
             "id":5,
-            
+            "img":"https://image.yes24.com/goods/125593530/XL",
             "title":"수레바퀴 아래서",
             "price":16000,
             "author":"헤르만 헤세",
@@ -82,7 +56,7 @@
         },
         {
             "id":6,
-           
+            "img":"https://image.yes24.com/goods/125480747/XL",
             "title":"탱고",
             "price":17000,
             "author":"호르헤 루이스 보르헤스",
@@ -96,7 +70,7 @@
         },
         {
             "id":7,
-            
+            "img":"https://image.yes24.com/goods/125294968/XL",
             "title":"나쁜 감정의 법칙",
             "price":19000,
             "author":"쉬셴장",
@@ -110,7 +84,7 @@
         },
         {
             "id":8,
-            
+            "img":"https://image.yes24.com/goods/124808556/XL",
             "title":"매일, 더, 많은 숫자의 지배 ",
             "price":15800,
             "author":"미카엘 달렌, 헬게 토르비에른센",
@@ -123,47 +97,8 @@
             "publish":"2024년 02월 08일"
         },
         {
-            "id":9,
-            
-            "title":"니체처럼 사랑하고 세네카처럼 현명하게",
-            "price":17500,
-            "author":"윤지원",
-            "company":"유노책주",
-            "genre":"인문/교양",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2024년 03월 05일"
-        },
-        {
-            "id":10,
-            
-            "title":"생각이 너무 많은 어른들을 위한 심리학",
-            "price":14000,
-            "author":"김혜남",
-            "company":"메이븐",
-            "genre":"인문/교양",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2023년 09월 25일"
-        },
-        {
-            "id":11,
-            
-            "title":"한국 현대사를 뒤흔든 40가지 사건",
-            "price":20000,
-            "author":"강부원",
-            "company":"믹스커피",
-            "genre":"역사",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2023년 12월 26일"
-        },
-        {
             "id":12,
-            
+            "img":"https://image.yes24.com/goods/124187468/XL",
             "title":"근대 용어의 탄생",
             "price":21000,
             "author":"윤혜준",
@@ -176,7 +111,7 @@
         },
         {
             "id":13,
-            
+            "img":"https://image.yes24.com/goods/119148882/XL",
             "title":"에드워드 호퍼의 시선",
             "price":22000,
             "author":"이연식",
@@ -188,21 +123,8 @@
             "publish":"2023년 06월 13일"
         },
         {
-            "id":14,
-           
-            "title":"호아킨 소로야 - 바다, 바닷가에서",
-            "price":24000,
-            "author":"호아킨 소로야",
-            "company":"에이치비프레스",
-            "genre":"예술",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2020년 08월 05일"
-        },
-        {
             "id":15,
-            
+            "img":"https://image.yes24.com/goods/125190189/XL",
             "title":"뱅크시",
             "price":17500,
             "author":"윌 엘즈워스-존스",
@@ -216,7 +138,7 @@
         },
         {
             "id":16,
-            
+            "img":"https://image.yes24.com/goods/124914559/XL",
             "title":"회복의 여정",
             "price":14000,
             "author":"이규현",
@@ -229,7 +151,7 @@
         },
         {
             "id":17,
-            
+            "img":"https://image.yes24.com/goods/122338452/XL",
             "title":"고구마꽃이 피었습니다",
             "price":16000,
             "author":"조경자",
@@ -239,11 +161,10 @@
             "new":true,
             "top10":false,
             "publish":"2023년 09월 13일"
-        }
-        ,
+        },
         {
             "id":18,
-            
+            "img":"https://image.yes24.com/goods/124326127/XL",
             "title":"위대한 상인의 비밀",
             "price":16800,
             "author":"오그 만디노",
@@ -267,19 +188,6 @@
             "new":true,
             "top10":false,
             "publish":"2023년 11월 15일"
-        },
-        {
-            "id":20,
-            "img":"https://image.yes24.com/goods/123453513/XL",
-            "title":"반장으로서의 책임과 의무 3",
-            "price":15000,
-            "author":"수신지",
-            "company":"귤프레스",
-            "genre":"만화",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2023년 11월 03일"
         },
         {
             "id":21,
@@ -321,19 +229,6 @@
             "new":true,
             "top10":false,
             "publish":"2023년 01월 20일"
-        },
-        {
-            "id":24,
-            "img":"https://image.yes24.com/goods/122789228/XL",
-            "title":"2024 문동균 한국사 최신 기출 총정리",
-            "price":16000,
-            "author":"문동균",
-            "company":" 에스티유니타스",
-            "genre":"자격증",
-            "choice":false,
-            "new":true,
-            "top10":false,
-            "publish":"2023년 10월 13일"
         },
         {
             "id":25,
