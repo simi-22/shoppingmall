@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './Component/NavBar.css'
 // import Home from './Pages/Home';
-import Cart from './Pages/Cart';
+// import Cart from './Pages/Cart';
 import './Component/BooksCard.css'
 import './Pages/Login.css'
 
@@ -12,6 +12,7 @@ import Login from './Pages/Login';
 import BooksAll from './Pages/BooksAll';
 import NavBar from './Component/NavBar';
 import { useEffect, useState } from 'react';
+import PrivateRoute from './Route/PrivateRoute';
 // import BooksCard from './Component/BooksCard';
 
 
@@ -44,7 +45,7 @@ function App() {
        <NavBar />
        <Routes>
         <Route path='/' element={<BooksAll />} />
-        <Route path='/cart' element={<Cart />} />
+        <Route path='/cart' element={<PrivateRoute authenticate={authenticate}/>} />
         <Route path='/login' element={<Login setAuthenticate={setAuthenticate}/>} />
         <Route path='/Books/:id' element={<BooksDetail />} />
        </Routes>

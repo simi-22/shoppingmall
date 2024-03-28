@@ -11,10 +11,14 @@ const NavBar = () => {
     navigate("/login")
   }
 
+  const showCart = () => {
+    navigate("/cart")
+  }
+
   return (
     <div id='Navbar'>
       <ul className='n-first-l'>
-        <li><button>장바구니</button></li>
+        <li><button onClick={showCart}>장바구니</button></li>
         <li><button onClick={goToLogin}>로그인</button></li>
       </ul>
       <div className='n-second-l'>

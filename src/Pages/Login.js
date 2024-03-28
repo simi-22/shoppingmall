@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = ({setAuthenticate}) => {
+    const navigate = useNavigate();
+
+    //login 폼 새로고침 막기
     const loginUser = (event) => {
         event.preventDefault();
         setAuthenticate(true);
         console.log("login");
+        navigate("/");
     }
   return (
     <div id='login'>
