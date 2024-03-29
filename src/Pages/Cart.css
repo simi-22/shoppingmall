@@ -1,8 +1,9 @@
 #cart {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 80px;
     box-sizing: border-box;
+    min-height: calc(100vh - 150px - 60px);
 }
 #cart h4 {
     max-width: 800px;

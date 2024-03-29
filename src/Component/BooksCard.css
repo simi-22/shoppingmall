@@ -1,7 +1,6 @@
 #books-all-container {
     display: flex;
     flex-direction: column;
-    justify-content: end;
     margin-bottom: 20px;
     cursor: pointer;
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 130px;
+    height: 150px;
     padding-top: 10px;
 }
 #Navbar .n-first-l {
@@ -23,6 +23,7 @@
     align-items: center;
     height: 55%;
     margin: 0 auto;
+    margin-bottom: 10px;
     /* background-color: violet; */
 }
 
@@ -70,4 +71,22 @@
 #Navbar .n-third-l li:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+
+@media (max-width: 870px) {
+    #Navbar .n-second-l input {
+        width: 400px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    #Navbar .n-second-l input {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 540px) {
+    
 }

@@ -13,6 +13,7 @@ import BooksDetail from './Pages/BooksDetail';
 import Login from './Pages/Login';
 import BooksAll from './Pages/BooksAll';
 import NavBar from './Component/NavBar';
+import Footer from './Component/Footer'
 import { useEffect, useState } from 'react';
 import PrivateRoute from './Route/PrivateRoute';
 // import BooksCard from './Component/BooksCard';
@@ -44,13 +45,14 @@ function App() {
   })
   return (
     <div className="App">
-       <NavBar />
+       <NavBar authenticate={authenticate} setAuthenticate={setAuthenticate}/>
        <Routes>
         <Route path='/' element={<BooksAll />} />
         <Route path='/cart' element={<PrivateRoute authenticate={authenticate}/>} />
         <Route path='/login' element={<Login setAuthenticate={setAuthenticate}/>} />
         <Route path='/Books/:id' element={<BooksDetail />} />
        </Routes>
+       <Footer />
     </div>
   );
 }
