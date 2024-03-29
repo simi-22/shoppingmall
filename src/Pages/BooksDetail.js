@@ -37,15 +37,17 @@ const BooksDetail = () => {
                 </li>
                 <li>
                     <p>판매가</p>
-                    <p>{books?.price - books?.price*0.1}<span>원</span><span>10%할인</span></p>
+                    <p>{books?.price - books?.price*0.1}<span>원</span><span>(10%할인)</span></p>
                 </li>
                 <li>
                     <p>최대혜택가</p>
                     <p>{books?.price - 3000}<span>원</span></p>
                 </li>
             </ul>
+            <div className='bd-button-wrap'>
             <button>카트에 넣기</button>
             <button>바로구매</button>
+            </div>
         </div>
     </div>
   )

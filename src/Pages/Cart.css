@@ -1,6 +1,7 @@
 #cart {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
     padding-top: 80px;
     box-sizing: border-box;
     min-height: calc(100vh - 150px - 60px);
