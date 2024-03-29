@@ -17,6 +17,15 @@ const NavBar = () => {
   const goHome = () => {
     navigate("/")
   }
+  //엔터키
+  const search = (event) => {
+    if(event.key === "Enter"){
+      //입력한 검색어를 읽어와서
+      let keyword = event.target.value;
+      //url을 바꿔준다
+      navigate(`/?q=${keyword}`)
+    }
+  }
 
   return (
     <div id='Navbar'>
@@ -26,7 +35,7 @@ const NavBar = () => {
       </ul>
       <div className='n-second-l'>
         <h1><button onClick={goHome}><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></button></h1>
-        <input type='text' placeholder='책 제목을 입력하세요.'></input>
+        <input type='text' placeholder='책 제목, 작가명을 입력하세요.' onKeyPress={(event) => search(event)}></input>
         <button className='input-btn'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
       </div>
       <div className='n-third-l'>
