@@ -6,6 +6,8 @@ import './Component/NavBar.css'
 // import Cart from './Pages/Cart';
 import './Component/BooksCard.css'
 import './Pages/Login.css'
+import './Pages/Cart.css'
+import './Pages/BooksDetail.css'
 
 import BooksDetail from './Pages/BooksDetail';
 import Login from './Pages/Login';

@@ -14,6 +14,9 @@ const NavBar = () => {
   const showCart = () => {
     navigate("/cart")
   }
+  const goHome = () => {
+    navigate("/")
+  }
 
   return (
     <div id='Navbar'>
@@ -22,9 +25,9 @@ const NavBar = () => {
         <li><button onClick={goToLogin}>로그인</button></li>
       </ul>
       <div className='n-second-l'>
-        <h1><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></h1>
+        <h1><button onClick={goHome}><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></button></h1>
         <input type='text' placeholder='책 제목을 입력하세요.'></input>
-        <button><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
+        <button className='input-btn'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
       </div>
       <div className='n-third-l'>
         <ul>
