@@ -2,20 +2,19 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 150px;
-    padding-top: 10px;
 }
-#Navbar .n-first-l {
+#Navbar #pc-menu .n-first-l {
     display: flex;
     justify-content: end;
     height: 15%;
     max-width: 1680px;
+    margin-top: 10px;
     /* background-color: tomato; */
 }
-#Navbar .n-first-l li {
+#Navbar #pc-menu .n-first-l li {
     margin-right: 20px;
 }
-#Navbar .n-second-l {
+#Navbar #pc-menu .n-second-l {
     position: relative;
     max-width: 700px;
     display: flex;
@@ -27,7 +26,7 @@
     /* background-color: violet; */
 }
 
-#Navbar .n-second-l input {
+#Navbar #pc-menu .n-second-l input {
     width: 500px;
     font-size: 16px;
     padding: 10px 50px 10px 15px;
@@ -36,57 +35,115 @@
     border-radius: 10px;
     border: 1px solid black;
 }
-#Navbar .n-second-l .input-btn {
+#Navbar #pc-menu .n-second-l .input-btn {
     position: absolute;
     right: 15px;
     top: calc(50%-8px);
     color: #555555;
     font-size: 16px;
 }
-#Navbar .n-second-l .input-btn:hover {
+#Navbar #pc-menu .n-second-l .input-btn:hover {
     color: #0080ff;
 }
-#Navbar .n-third-l {
+#Navbar #pc-menu .n-third-l {
     /* border: 1px solid #414141; */
     background-color: #0080ff;
     color: #fff;
-    height: 30%;
 }
-#Navbar .n-third-l ul{
+#Navbar #pc-menu .n-third-l ul{
     display: flex;
     justify-content: center;
     line-height: 36px;
     margin: 0;
     /* background-color: thistle; */
 }
-#Navbar .n-third-l li {
+#Navbar #pc-menu .n-third-l li {
     margin-right: 20px;
     cursor: pointer;
 }
 
-#Navbar .n-third-l li button{
+#Navbar #pc-menu .n-third-l li button{
     margin-right: 10px;
     font-size: 18px;
 }
-#Navbar .n-third-l li:hover {
+#Navbar #pc-menu .n-third-l li:hover {
     text-decoration: underline;
     font-weight: bold;
 }
 
+#Navbar #mobile-menu {
+    border-bottom: 1px solid #ebebeb;
+    display: none;
+}
+#Navbar #mobile-menu > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0080ff;
+    padding:5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+}
+#Navbar #mobile-menu h1 {
+    text-align: center;
+}
+#Navbar #mobile-menu h1 img{
+    width: 120px;
+}
+#Navbar #mobile-menu ul {
+    display: flex;
+}
+#Navbar #mobile-menu ul li:first-of-type {
+    margin-right: 10px;
+}
+#Navbar #mobile-menu ul li button {
+    color: #fff;
+}
+#Navbar #mobile-menu .m-menu-btn {
+    height: 18.5px;
+    color: #fff;
+}
+#mobile-menu-list {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 80vw;
+    height: 100vh;
+    padding: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+#mobile-menu-list ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.m-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    width: 20px;
+}
 
 @media (max-width: 870px) {
-    #Navbar .n-second-l input {
+    #Navbar #pc-menu .n-second-l input {
         width: 400px;
         font-size: 15px;
     }
 }
 
 @media (max-width: 640px) {
-    #Navbar .n-second-l input {
+    #Navbar #pc-menu .n-second-l input {
         width: 300px;
         font-size: 15px;
     }
 }
 @media (max-width: 540px) {
-    
+    #Navbar {
+        height: auto;
+    }
+    #Navbar #pc-menu {
+        display: none;
+    }
+    #Navbar #mobile-menu {
+        display: block;
+    }
 }

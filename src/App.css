@@ -48,6 +48,14 @@ button {
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 @media (max-width: 870px) {
     #books-all-container>ul{
         grid-template-columns: repeat(4, 1fr);

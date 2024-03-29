@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
+import {faMagnifyingGlass, faBars, faXmark} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const NavBar = ({authenticate, setAuthenticate}) => {
   const menuList = ['소설/시','인문', '역사', '예술', '종교', '자기계발', '만화', 'IT', '자격증'];
@@ -31,23 +32,57 @@ const NavBar = ({authenticate, setAuthenticate}) => {
     }
   }
 
+  //모바일 메뉴제어
+  const [menuListVisible, setMenuListVisible] = useState(false);
+
+  const handleMobileMenu = () => {
+    // menuListVisible 상태를 토글하여 보이기/숨기기를 제어
+    setMenuListVisible(!menuListVisible);
+  };
+
+  const closeMobileMenu = () => {
+    // 메뉴를 닫을 때 mobile-menu-list 요소의 클래스를 hidden으로 변경
+    setMenuListVisible(false);
+  };
+
+
   return (
     <div id='Navbar'>
-      <ul className='n-first-l'>
-        <li><button onClick={showCart}>장바구니</button></li>
-        <li><button onClick={goToLogin}>{authenticate ? "로그아웃" : "로그인"}</button></li>
-      </ul>
-      <div className='n-second-l'>
-        <h1><button onClick={goHome}><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></button></h1>
-        <input type='text' placeholder='책 제목, 작가명을 입력하세요.' onKeyPress={(event) => search(event)}></input>
-        <button className='input-btn'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
-      </div>
-      <div className='n-third-l'>
-        <ul>
-          {menuList.map((menu) => (
-            <li>{menu}</li>
-          ))}
+      <div id='pc-menu'>
+        <ul className='n-first-l'>
+          <li><button onClick={showCart}>장바구니</button></li>
+          <li><button onClick={goToLogin}>{authenticate ? "로그아웃" : "로그인"}</button></li>
         </ul>
+        <div className='n-second-l'>
+          <h1><button onClick={goHome}><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></button></h1>
+          <input type='text' placeholder='책 제목, 작가명을 입력하세요.' onKeyPress={(event) => search(event)}></input>
+          <button className='input-btn'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
+        </div>
+        <div className='n-third-l'>
+          <ul>
+            {menuList.map((menu) => (
+              <li>{menu}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div id='mobile-menu'>
+        <div>
+          <button className='m-menu-btn' onClick={handleMobileMenu}><FontAwesomeIcon icon={faBars}/></button>
+          <ul>
+            <li><button onClick={showCart}>장바구니</button></li>
+            <li><button onClick={goToLogin}>{authenticate ? "로그아웃" : "로그인"}</button></li>
+          </ul>
+        </div>
+        <h1><button onClick={goHome}><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></button></h1>
+      </div>
+      <div id='mobile-menu-list' className={menuListVisible ? 'active' : 'hidden'}>
+          <ul>
+            {menuList.map((menu) => (
+              <li>{menu}</li>
+            ))}
+          </ul>
+          <button className='m-close-btn' onClick={closeMobileMenu}><FontAwesomeIcon icon={faXmark}/></button>
       </div>
     </div>
   )
