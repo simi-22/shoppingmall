@@ -77,6 +77,7 @@ const NavBar = ({authenticate, setAuthenticate}) => {
         <h1><button onClick={goHome}><img src="https://image.yes24.com/sysimage/renew/gnb/logoN4.svg" alt='예스24 로고'/></button></h1>
       </div>
       <div id='mobile-menu-list' className={menuListVisible ? 'active' : 'hidden'}>
+      <input type='text' placeholder='책 제목, 작가명을 입력하세요.' onKeyPress={(event) => search(event)}></input>
           <ul>
             {menuList.map((menu) => (
               <li>{menu}</li>
