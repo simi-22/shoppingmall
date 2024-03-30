@@ -3,10 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass, faBars, faXmark} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 const NavBar = ({authenticate, setAuthenticate}) => {
   const menuList = ['소설/시','인문', '역사', '예술', '종교', '자기계발', '만화', 'IT', '자격증'];
   const navigate = useNavigate();
+
+  //메뉴클릭이벤트
+  const [navClick, setNavClick] = useState('');
+
+  useEffect(() => {
+    handleNavClick();
+  }, [navClick])
+
+  const handleNavClick = () => {
+    navigate(`/?q=${navClick}`);
+  }
 
   const goToLogin = () => {
     if(authenticate){
@@ -60,8 +72,8 @@ const NavBar = ({authenticate, setAuthenticate}) => {
         </div>
         <div className='n-third-l'>
           <ul>
-            {menuList.map((menu) => (
-              <li>{menu}</li>
+            {menuList.map((item) => (
+              <li><button onClick={() => setNavClick(item)}>{item}</button></li>
             ))}
           </ul>
         </div>
@@ -79,8 +91,8 @@ const NavBar = ({authenticate, setAuthenticate}) => {
       <div id='mobile-menu-list' className={menuListVisible ? 'active' : 'hidden'}>
       <input type='text' placeholder='책 제목, 작가명을 입력하세요.' onKeyPress={(event) => search(event)}></input>
           <ul>
-            {menuList.map((menu) => (
-              <li>{menu}</li>
+            {menuList.map((item) => (
+              <li><button onClick={() => setNavClick(item)}>{item}</button></li>
             ))}
           </ul>
           <button className='m-close-btn' onClick={closeMobileMenu}><FontAwesomeIcon icon={faXmark}/></button>

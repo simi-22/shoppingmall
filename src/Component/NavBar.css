@@ -22,7 +22,6 @@
     align-items: center;
     height: 55%;
     margin: 0 auto;
-    margin-bottom: 10px;
     /* background-color: violet; */
 }
 
@@ -41,6 +40,7 @@
     top: calc(50%-8px);
     color: #555555;
     font-size: 16px;
+    pointer-events: none;
 }
 #Navbar #pc-menu .n-second-l .input-btn:hover {
     color: #0080ff;
@@ -59,12 +59,13 @@
 }
 #Navbar #pc-menu .n-third-l li {
     margin-right: 20px;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 #Navbar #pc-menu .n-third-l li button{
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 15px;
+    color: #fff;
 }
 #Navbar #pc-menu .n-third-l li:hover {
     text-decoration: underline;
