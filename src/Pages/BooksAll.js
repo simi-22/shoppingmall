@@ -9,7 +9,6 @@ const BooksAll = () => {
     const booksList = useSelector(state => state.product.booksList)
     const [query, setquery] =useSearchParams();
     const dispatch = useDispatch();
-
     const getBooks = () => {
         let searchQuery = query.get('q') || "";
         console.log("쿼리값은?",searchQuery);
