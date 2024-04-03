@@ -4,4 +4,10 @@ function login (id, password){
     }
 }
 
-export const authenticateAction = {login}
+function logout() {
+    return async(dispatch, getState) => {
+        dispatch({type: 'LOGOUT_SUCCESS'})
+    }
+}
+
+export const authenticateAction = {login, logout}

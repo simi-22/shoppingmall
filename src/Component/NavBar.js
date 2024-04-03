@@ -4,10 +4,14 @@ import {faMagnifyingGlass, faBars, faXmark} from '@fortawesome/free-solid-svg-ic
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { authenticateAction } from '../redux/actions/authenticateAction';
 
-const NavBar = ({authenticate, setAuthenticate}) => {
+const NavBar = () => {
   const menuList = ['소설/시','인문', '역사', '예술', '종교', '자기계발', '만화', 'IT', '자격증'];
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const authenticate = useSelector(state => state.auth.authenticate)
 
   //메뉴클릭이벤트
   const [navClick, setNavClick] = useState('');
@@ -22,7 +26,7 @@ const NavBar = ({authenticate, setAuthenticate}) => {
 
   const goToLogin = () => {
     if(authenticate){
-      setAuthenticate(false);
+      dispatch(authenticateAction.logout())
     }else {
       navigate("/login");
     }

@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { authenticateAction } from '../redux/actions/authenticateAction';
 
-const Login = ({setAuthenticate}) => {
+const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+
     const [id, setId] = useState();
     const [password, setPassword] = useState();
 
@@ -16,6 +17,7 @@ const Login = ({setAuthenticate}) => {
         console.log("login");
         navigate("/");
     }
+    
   return (
     <div id='login'>
         <form onSubmit = {(event) => loginUser(event)}>
