@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import { productAction } from '../redux/actions/productAction';
+// import { productAction } from '../redux/actions/productAction';
+import { fetchBooksDetail } from '../redux/reducers/productSlice';
+
 
 const BooksDetail = () => {
     let { id } = useParams();
     const dispatch = useDispatch();
     const booksDetail = useSelector(state => state.product.detail)
-
-    // const getBooksDetail = () => {
-    //     dispatch(productAction.getBooksDetail(id));
-    // }
+    const getBooksDetail = () => {
+        dispatch(fetchBooksDetail(id));
+    }
 
     useEffect(() => {
-        dispatch(productAction.getBooksDetail(id));
+        getBooksDetail();
     }, []);
 
   return (
