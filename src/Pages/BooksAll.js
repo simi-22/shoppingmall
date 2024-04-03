@@ -2,18 +2,19 @@ import React, { useEffect, useState } from 'react'
 // import { Container, Row, Col } from 'react-bootstrap';
 import BooksCard from '../Component/BooksCard';
 import { useSearchParams } from 'react-router-dom';
+import { productAction } from '../redux/actions/productAction';
+import { useDispatch, useSelector } from 'react-redux';
 
 const BooksAll = () => {
-    const [booksList, setBooksList] = useState([]);
+    const booksList = useSelector(state => state.product.booksList)
     const [query, setquery] =useSearchParams();
-    const getBooks = async() => {
+    const dispatch = useDispatch();
+
+    const getBooks = () => {
         let searchQuery = query.get('q') || "";
         console.log("쿼리값은?",searchQuery);
-        // let url = `http://localhost:4000/products`
-        let url = `https://my-json-server.typicode.com/simi-22/shoppingmall/products?q=${searchQuery}`;
-        let response = await fetch(url);
-        let data = await response.json();
-        setBooksList(data);
+        dispatch(productAction.getBooks(searchQuery));
+        
     }
     useEffect(()=>{
         getBooks();
