@@ -5,7 +5,7 @@ React, Javascript, react-redux/middleware, redux-toolkit
 my json server
 
 # Deploy
-[Netlify](booksmall.netlify.app/)
+[Netlify](https://booksmall.netlify.app/)
 
 # Works
 My json server로 DB파일을 만들어 페이지에 렌더링
