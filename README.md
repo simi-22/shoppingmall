@@ -8,12 +8,21 @@ my json server
 [Netlify](https://booksmall.netlify.app/)
 
 # Works
-My json server로 DB파일을 만들어 페이지에 렌더링
-
-
-장르 필터링 기능
-
+* My json server로 DB파일을 만들어 페이지에 렌더링
+* 장르 필터링 기능
+* 상세페이지
 ---
+
+
+
+
+
+
+
+
+
+
+
 
 
 # React Query
